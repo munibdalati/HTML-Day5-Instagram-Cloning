@@ -1,0 +1,136 @@
+.container{
+    display: grid;
+    grid-template-columns: 15% 45% 30%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas: 
+    "aside nav side1"
+    "aside main side2"
+}
+
+.logo{
+    width: 100px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #262626;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 5px;
+    padding-top: 35px;
+    border-right: 1px solid #dbdbdb;
+    grid-area: aside;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+nav{
+    display: flex;
+    grid-column: span 1;
+    margin-top: 40px;
+    margin-left: 120px;
+    justify-content: space-around;
+    grid-area: nav;
+}
+
+main{
+    margin-left: 140px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    
+}
+
+.firsthead{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.mainhead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+main img{
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.like{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    
+    
+}
+.bold {
+    font-weight: bold;
+}
+
+.grey {
+    color: #8e8e8e;
+}
+
+.munib{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.profile{
+    margin-top: 30px;
+    margin-left: 100px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    grid-area: side1;
+
+}
+
+.blue{
+    color:#0296f6;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.suggestions{
+    grid-area: side2;
+    margin-left: 120px;
+}
+
+.sugghead{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sugglist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow{
+    margin-left: 120px;
+}
+
+footer{
+    color: #8e8e8e;
+}
+
+.copyright{
+    font-weight: bold;
+}
